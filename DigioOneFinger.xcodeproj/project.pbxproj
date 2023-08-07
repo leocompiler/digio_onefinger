@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		52AD28B7DE89A025CF976FBF /* Pods_DigioOneFinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30046507AFB771A2461AACF /* Pods_DigioOneFinger.framework */; };
 		93C84DA32A79A15400DA0C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DA22A79A15400DA0C57 /* AppDelegate.swift */; };
-		93C84DA72A79A15400DA0C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DA62A79A15400DA0C57 /* ViewController.swift */; };
 		93C84DAC2A79A15600DA0C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C84DAB2A79A15600DA0C57 /* Assets.xcassets */; };
 		93C84DBA2A79A15600DA0C57 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DB92A79A15600DA0C57 /* HomeViewModelTests.swift */; };
 		93C84DD62A79A30600DA0C57 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DD52A79A30600DA0C57 /* HomeViewModel.swift */; };
@@ -72,7 +71,6 @@
 		7746C5D0986F6669306BE3A6 /* Pods-DigioOneFingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFingerTests.release.xcconfig"; path = "Target Support Files/Pods-DigioOneFingerTests/Pods-DigioOneFingerTests.release.xcconfig"; sourceTree = "<group>"; };
 		93C84D9F2A79A15400DA0C57 /* DigioOneFinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioOneFinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C84DA22A79A15400DA0C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93C84DA62A79A15400DA0C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93C84DAB2A79A15600DA0C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C84DB02A79A15600DA0C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C84DB52A79A15600DA0C57 /* DigioOneFingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioOneFingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +181,6 @@
 				93C84DD32A79A27400DA0C57 /* Modules */,
 				93C84DD22A79A24400DA0C57 /* Services */,
 				93C84DA22A79A15400DA0C57 /* AppDelegate.swift */,
-				93C84DA62A79A15400DA0C57 /* ViewController.swift */,
 				93C84DAB2A79A15600DA0C57 /* Assets.xcassets */,
 				93C84DB02A79A15600DA0C57 /* Info.plist */,
 			);
@@ -558,7 +555,6 @@
 				93C84DFE2A7D1C7900DA0C57 /* AlamofireSessionManagerBuilder.swift in Sources */,
 				93C84DEC2A7AD0B500DA0C57 /* EntityMarketProducts.swift in Sources */,
 				93C84E142A7E74BA00DA0C57 /* ItemDetailView.swift in Sources */,
-				93C84DA72A79A15400DA0C57 /* ViewController.swift in Sources */,
 				93C84DA32A79A15400DA0C57 /* AppDelegate.swift in Sources */,
 				93C84DEA2A7A743400DA0C57 /* CommonModel.swift in Sources */,
 				93C84DD82A79A32D00DA0C57 /* HomeView.swift in Sources */,

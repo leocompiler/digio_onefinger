@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ItemDetailController: ViewController, ViewCodeProtocol {
+class ItemDetailController: UIViewController, ViewCodeProtocol {
     typealias CustomView = ItemDetailView
     var item: ItemModel
     
