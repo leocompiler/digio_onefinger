@@ -1,5 +1,10 @@
 # digio_onefinger
 Um exemplo de aplicativo para processo da Digio
+<img width="356" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/bad6f6fa-d4e3-4409-90b0-71ecf6e7924e">
+<img width="356" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/04c45446-f355-49ea-a679-fb1d08407188">
+<img width="356" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/12541ced-1043-4970-97d9-debf3f7f3f2b">
+<img width="500" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/dbaa6abe-4f52-46fd-aea7-b99e31aa991d">
+
 # Arquitetura
  - MVVM + Coordinator -> padrão de projeto adotado para melhor aproveitamento dos recursos e trabalho em grupo.
  - Repository -> Acesso organizado a API com possibilidade de Mock via JSON cadastrado na pasta mock
