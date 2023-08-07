@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52AD28B7DE89A025CF976FBF /* Pods_DigioOneFinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30046507AFB771A2461AACF /* Pods_DigioOneFinger.framework */; };
+		93C84DA32A79A15400DA0C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DA22A79A15400DA0C57 /* AppDelegate.swift */; };
+		93C84DA72A79A15400DA0C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DA62A79A15400DA0C57 /* ViewController.swift */; };
+		93C84DAC2A79A15600DA0C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C84DAB2A79A15600DA0C57 /* Assets.xcassets */; };
+		93C84DBA2A79A15600DA0C57 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DB92A79A15600DA0C57 /* HomeViewModelTests.swift */; };
+		93C84DD62A79A30600DA0C57 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DD52A79A30600DA0C57 /* HomeViewModel.swift */; };
+		93C84DD82A79A32D00DA0C57 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DD72A79A32D00DA0C57 /* HomeView.swift */; };
+		93C84DDA2A79A33800DA0C57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DD92A79A33800DA0C57 /* HomeViewController.swift */; };
+		93C84DDD2A79A36A00DA0C57 /* CollectionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DDC2A79A36A00DA0C57 /* CollectionImageView.swift */; };
+		93C84DDF2A7A6EA300DA0C57 /* ApiServiceMarketProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DDE2A7A6EA300DA0C57 /* ApiServiceMarketProducts.swift */; };
+		93C84DE12A7A6EB400DA0C57 /* RepositoryMarketProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DE02A7A6EB400DA0C57 /* RepositoryMarketProducts.swift */; };
+		93C84DE42A7A6F7500DA0C57 /* market-products.json in Resources */ = {isa = PBXBuildFile; fileRef = 93C84DE32A7A6F7500DA0C57 /* market-products.json */; };
+		93C84DE62A7A711100DA0C57 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DE52A7A711100DA0C57 /* ErrorResponse.swift */; };
+		93C84DE82A7A73B900DA0C57 /* CommonCustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DE72A7A73B900DA0C57 /* CommonCustomTypes.swift */; };
+		93C84DEA2A7A743400DA0C57 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DE92A7A743400DA0C57 /* CommonModel.swift */; };
+		93C84DEC2A7AD0B500DA0C57 /* EntityMarketProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DEB2A7AD0B500DA0C57 /* EntityMarketProducts.swift */; };
+		93C84DEE2A7C537300DA0C57 /* EntityProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DED2A7C537300DA0C57 /* EntityProduct.swift */; };
+		93C84DF02A7C537D00DA0C57 /* EntitySpotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DEF2A7C537D00DA0C57 /* EntitySpotlight.swift */; };
+		93C84DF22A7C53BE00DA0C57 /* EntityCash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DF12A7C53BE00DA0C57 /* EntityCash.swift */; };
+		93C84DF72A7D0C2E00DA0C57 /* CommonDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DF62A7D0C2E00DA0C57 /* CommonDevice.swift */; };
+		93C84DF92A7D0CD300DA0C57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DF82A7D0CD300DA0C57 /* Constants.swift */; };
+		93C84DFB2A7D108F00DA0C57 /* ConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DFA2A7D108F00DA0C57 /* ConsoleLog.swift */; };
+		93C84DFE2A7D1C7900DA0C57 /* AlamofireSessionManagerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DFD2A7D1C7900DA0C57 /* AlamofireSessionManagerBuilder.swift */; };
+		93C84E002A7D1DA500DA0C57 /* TrustKitCertificatePinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DFF2A7D1DA500DA0C57 /* TrustKitCertificatePinning.swift */; };
+		93C84E022A7D230800DA0C57 /* LayoutTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E012A7D230800DA0C57 /* LayoutTools.swift */; };
+		93C84E042A7D2C1700DA0C57 /* CustomRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E032A7D2C1700DA0C57 /* CustomRepository.swift */; };
+		93C84E062A7D342400DA0C57 /* EncryptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E052A7D342400DA0C57 /* EncryptModel.swift */; };
+		93C84E082A7D7AEE00DA0C57 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E072A7D7AEE00DA0C57 /* ViewCodeProtocol.swift */; };
+		93C84E0D2A7DB67300DA0C57 /* CellImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E0C2A7DB67300DA0C57 /* CellImageView.swift */; };
+		93C84E0F2A7DB74800DA0C57 /* CellImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C84E0E2A7DB74800DA0C57 /* CellImageView.xib */; };
+		93C84E122A7E710D00DA0C57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93C84E112A7E710D00DA0C57 /* Localizable.strings */; };
+		93C84E142A7E74BA00DA0C57 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E132A7E74BA00DA0C57 /* ItemDetailView.swift */; };
+		93C84E162A7ED6E100DA0C57 /* ItemDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E152A7ED6E100DA0C57 /* ItemDetailController.swift */; };
+		93C84E1A2A811CEE00DA0C57 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E192A811CEE00DA0C57 /* Coordinator.swift */; };
+		93C84E1C2A81245200DA0C57 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84E1B2A81245200DA0C57 /* ItemModel.swift */; };
+		C34C84D94C162D30AAD99785 /* Pods_DigioOneFingerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1558B6B18C5965C5934BC481 /* Pods_DigioOneFingerTests.framework */; };
+		FE7B9F1B4A1910F4AEC4F5D2 /* Pods_DigioOneFinger_DigioOneFingerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9F944C79AB3E457CDFEC67 /* Pods_DigioOneFinger_DigioOneFingerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93C84DB62A79A15600DA0C57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93C84D972A79A15400DA0C57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C84D9E2A79A15400DA0C57;
+			remoteInfo = DigioOneFinger;
+		};
+		93C84DC02A79A15600DA0C57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93C84D972A79A15400DA0C57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C84D9E2A79A15400DA0C57;
+			remoteInfo = DigioOneFinger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0352151CA731510CEC8E1577 /* Pods-DigioOneFinger-DigioOneFingerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFinger-DigioOneFingerUITests.release.xcconfig"; path = "Target Support Files/Pods-DigioOneFinger-DigioOneFingerUITests/Pods-DigioOneFinger-DigioOneFingerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1558B6B18C5965C5934BC481 /* Pods_DigioOneFingerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioOneFingerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9F944C79AB3E457CDFEC67 /* Pods_DigioOneFinger_DigioOneFingerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioOneFinger_DigioOneFingerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2545F07D155E34CA5213DD67 /* Pods-DigioOneFinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFinger.debug.xcconfig"; path = "Target Support Files/Pods-DigioOneFinger/Pods-DigioOneFinger.debug.xcconfig"; sourceTree = "<group>"; };
+		676B3B82EA672F88E8292504 /* Pods-DigioOneFingerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFingerTests.debug.xcconfig"; path = "Target Support Files/Pods-DigioOneFingerTests/Pods-DigioOneFingerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7746C5D0986F6669306BE3A6 /* Pods-DigioOneFingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFingerTests.release.xcconfig"; path = "Target Support Files/Pods-DigioOneFingerTests/Pods-DigioOneFingerTests.release.xcconfig"; sourceTree = "<group>"; };
+		93C84D9F2A79A15400DA0C57 /* DigioOneFinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioOneFinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C84DA22A79A15400DA0C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93C84DA62A79A15400DA0C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93C84DAB2A79A15600DA0C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93C84DB02A79A15600DA0C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C84DB52A79A15600DA0C57 /* DigioOneFingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioOneFingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C84DB92A79A15600DA0C57 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		93C84DBF2A79A15600DA0C57 /* DigioOneFingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioOneFingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C84DD52A79A30600DA0C57 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		93C84DD72A79A32D00DA0C57 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		93C84DD92A79A33800DA0C57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		93C84DDC2A79A36A00DA0C57 /* CollectionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImageView.swift; sourceTree = "<group>"; };
+		93C84DDE2A7A6EA300DA0C57 /* ApiServiceMarketProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceMarketProducts.swift; sourceTree = "<group>"; };
+		93C84DE02A7A6EB400DA0C57 /* RepositoryMarketProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMarketProducts.swift; sourceTree = "<group>"; };
+		93C84DE32A7A6F7500DA0C57 /* market-products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "market-products.json"; sourceTree = "<group>"; };
+		93C84DE52A7A711100DA0C57 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		93C84DE72A7A73B900DA0C57 /* CommonCustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCustomTypes.swift; sourceTree = "<group>"; };
+		93C84DE92A7A743400DA0C57 /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		93C84DEB2A7AD0B500DA0C57 /* EntityMarketProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityMarketProducts.swift; sourceTree = "<group>"; };
+		93C84DED2A7C537300DA0C57 /* EntityProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityProduct.swift; sourceTree = "<group>"; };
+		93C84DEF2A7C537D00DA0C57 /* EntitySpotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySpotlight.swift; sourceTree = "<group>"; };
+		93C84DF12A7C53BE00DA0C57 /* EntityCash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityCash.swift; sourceTree = "<group>"; };
+		93C84DF62A7D0C2E00DA0C57 /* CommonDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDevice.swift; sourceTree = "<group>"; };
+		93C84DF82A7D0CD300DA0C57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		93C84DFA2A7D108F00DA0C57 /* ConsoleLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLog.swift; sourceTree = "<group>"; };
+		93C84DFD2A7D1C7900DA0C57 /* AlamofireSessionManagerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireSessionManagerBuilder.swift; sourceTree = "<group>"; };
+		93C84DFF2A7D1DA500DA0C57 /* TrustKitCertificatePinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustKitCertificatePinning.swift; sourceTree = "<group>"; };
+		93C84E012A7D230800DA0C57 /* LayoutTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTools.swift; sourceTree = "<group>"; };
+		93C84E032A7D2C1700DA0C57 /* CustomRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRepository.swift; sourceTree = "<group>"; };
+		93C84E052A7D342400DA0C57 /* EncryptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptModel.swift; sourceTree = "<group>"; };
+		93C84E072A7D7AEE00DA0C57 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		93C84E0C2A7DB67300DA0C57 /* CellImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellImageView.swift; sourceTree = "<group>"; };
+		93C84E0E2A7DB74800DA0C57 /* CellImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellImageView.xib; sourceTree = "<group>"; };
+		93C84E112A7E710D00DA0C57 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		93C84E132A7E74BA00DA0C57 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		93C84E152A7ED6E100DA0C57 /* ItemDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailController.swift; sourceTree = "<group>"; };
+		93C84E192A811CEE00DA0C57 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		93C84E1B2A81245200DA0C57 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		C30046507AFB771A2461AACF /* Pods_DigioOneFinger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioOneFinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F887B9FCF549B8A819231B /* Pods-DigioOneFinger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFinger.release.xcconfig"; path = "Target Support Files/Pods-DigioOneFinger/Pods-DigioOneFinger.release.xcconfig"; sourceTree = "<group>"; };
+		F904B8588E6CF7DB9D2FD959 /* Pods-DigioOneFinger-DigioOneFingerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFinger-DigioOneFingerUITests.debug.xcconfig"; path = "Target Support Files/Pods-DigioOneFinger-DigioOneFingerUITests/Pods-DigioOneFinger-DigioOneFingerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93C84D9C2A79A15400DA0C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AD28B7DE89A025CF976FBF /* Pods_DigioOneFinger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C84DB22A79A15600DA0C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34C84D94C162D30AAD99785 /* Pods_DigioOneFingerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C84DBC2A79A15600DA0C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7B9F1B4A1910F4AEC4F5D2 /* Pods_DigioOneFinger_DigioOneFingerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AFC2E3E1B09B4FF0DA79DA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2545F07D155E34CA5213DD67 /* Pods-DigioOneFinger.debug.xcconfig */,
+				D9F887B9FCF549B8A819231B /* Pods-DigioOneFinger.release.xcconfig */,
+				F904B8588E6CF7DB9D2FD959 /* Pods-DigioOneFinger-DigioOneFingerUITests.debug.xcconfig */,
+				0352151CA731510CEC8E1577 /* Pods-DigioOneFinger-DigioOneFingerUITests.release.xcconfig */,
+				676B3B82EA672F88E8292504 /* Pods-DigioOneFingerTests.debug.xcconfig */,
+				7746C5D0986F6669306BE3A6 /* Pods-DigioOneFingerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		93C84D962A79A15400DA0C57 = {
+			isa = PBXGroup;
+			children = (
+				93C84DA12A79A15400DA0C57 /* DigioOneFinger */,
+				93C84DB82A79A15600DA0C57 /* DigioOneFingerTests */,
+				93C84DC22A79A15600DA0C57 /* DigioOneFingerUITests */,
+				93C84DA02A79A15400DA0C57 /* Products */,
+				0AFC2E3E1B09B4FF0DA79DA3 /* Pods */,
+				B8C292E87DF08189337EA1BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93C84DA02A79A15400DA0C57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93C84D9F2A79A15400DA0C57 /* DigioOneFinger.app */,
+				93C84DB52A79A15600DA0C57 /* DigioOneFingerTests.xctest */,
+				93C84DBF2A79A15600DA0C57 /* DigioOneFingerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93C84DA12A79A15400DA0C57 /* DigioOneFinger */ = {
+			isa = PBXGroup;
+			children = (
+				93C84E102A7E70F900DA0C57 /* Strings */,
+				93C84DD32A79A27400DA0C57 /* Modules */,
+				93C84DD22A79A24400DA0C57 /* Services */,
+				93C84DA22A79A15400DA0C57 /* AppDelegate.swift */,
+				93C84DA62A79A15400DA0C57 /* ViewController.swift */,
+				93C84DAB2A79A15600DA0C57 /* Assets.xcassets */,
+				93C84DB02A79A15600DA0C57 /* Info.plist */,
+			);
+			path = DigioOneFinger;
+			sourceTree = "<group>";
+		};
+		93C84DB82A79A15600DA0C57 /* DigioOneFingerTests */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DB92A79A15600DA0C57 /* HomeViewModelTests.swift */,
+			);
+			path = DigioOneFingerTests;
+			sourceTree = "<group>";
+		};
+		93C84DC22A79A15600DA0C57 /* DigioOneFingerUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DigioOneFingerUITests;
+			sourceTree = "<group>";
+		};
+		93C84DD22A79A24400DA0C57 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93C84E052A7D342400DA0C57 /* EncryptModel.swift */,
+				93C84E092A7D820D00DA0C57 /* Home */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		93C84DD32A79A27400DA0C57 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DFC2A7D154600DA0C57 /* UIComponents */,
+				93C84DDB2A79A34D00DA0C57 /* Common */,
+				93C84DD42A79A2C700DA0C57 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		93C84DD42A79A2C700DA0C57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DD52A79A30600DA0C57 /* HomeViewModel.swift */,
+				93C84DD72A79A32D00DA0C57 /* HomeView.swift */,
+				93C84DD92A79A33800DA0C57 /* HomeViewController.swift */,
+				93C84E192A811CEE00DA0C57 /* Coordinator.swift */,
+				93C84E132A7E74BA00DA0C57 /* ItemDetailView.swift */,
+				93C84E152A7ED6E100DA0C57 /* ItemDetailController.swift */,
+				93C84E1B2A81245200DA0C57 /* ItemModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		93C84DDB2A79A34D00DA0C57 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DE22A7A6F4000DA0C57 /* mocks-json */,
+				93C84DFD2A7D1C7900DA0C57 /* AlamofireSessionManagerBuilder.swift */,
+				93C84DF82A7D0CD300DA0C57 /* Constants.swift */,
+				93C84DE52A7A711100DA0C57 /* ErrorResponse.swift */,
+				93C84DE72A7A73B900DA0C57 /* CommonCustomTypes.swift */,
+				93C84DE92A7A743400DA0C57 /* CommonModel.swift */,
+				93C84DF62A7D0C2E00DA0C57 /* CommonDevice.swift */,
+				93C84DFA2A7D108F00DA0C57 /* ConsoleLog.swift */,
+				93C84E032A7D2C1700DA0C57 /* CustomRepository.swift */,
+				93C84DFF2A7D1DA500DA0C57 /* TrustKitCertificatePinning.swift */,
+				93C84E072A7D7AEE00DA0C57 /* ViewCodeProtocol.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		93C84DE22A7A6F4000DA0C57 /* mocks-json */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DE32A7A6F7500DA0C57 /* market-products.json */,
+			);
+			path = "mocks-json";
+			sourceTree = "<group>";
+		};
+		93C84DF52A7D09E900DA0C57 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DEB2A7AD0B500DA0C57 /* EntityMarketProducts.swift */,
+				93C84DED2A7C537300DA0C57 /* EntityProduct.swift */,
+				93C84DEF2A7C537D00DA0C57 /* EntitySpotlight.swift */,
+				93C84DF12A7C53BE00DA0C57 /* EntityCash.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		93C84DFC2A7D154600DA0C57 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DDC2A79A36A00DA0C57 /* CollectionImageView.swift */,
+				93C84E012A7D230800DA0C57 /* LayoutTools.swift */,
+				93C84E0C2A7DB67300DA0C57 /* CellImageView.swift */,
+				93C84E0E2A7DB74800DA0C57 /* CellImageView.xib */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		93C84E092A7D820D00DA0C57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93C84DF52A7D09E900DA0C57 /* entity */,
+				93C84DDE2A7A6EA300DA0C57 /* ApiServiceMarketProducts.swift */,
+				93C84DE02A7A6EB400DA0C57 /* RepositoryMarketProducts.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		93C84E102A7E70F900DA0C57 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				93C84E112A7E710D00DA0C57 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		B8C292E87DF08189337EA1BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C30046507AFB771A2461AACF /* Pods_DigioOneFinger.framework */,
+				1A9F944C79AB3E457CDFEC67 /* Pods_DigioOneFinger_DigioOneFingerUITests.framework */,
+				1558B6B18C5965C5934BC481 /* Pods_DigioOneFingerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93C84D9E2A79A15400DA0C57 /* DigioOneFinger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C84DC92A79A15600DA0C57 /* Build configuration list for PBXNativeTarget "DigioOneFinger" */;
+			buildPhases = (
+				149E8F025FBC8091161BB758 /* [CP] Check Pods Manifest.lock */,
+				93C84D9B2A79A15400DA0C57 /* Sources */,
+				93C84D9C2A79A15400DA0C57 /* Frameworks */,
+				93C84D9D2A79A15400DA0C57 /* Resources */,
+				AA55FFBA7BBF947425AB8931 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigioOneFinger;
+			productName = DigioOneFinger;
+			productReference = 93C84D9F2A79A15400DA0C57 /* DigioOneFinger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93C84DB42A79A15600DA0C57 /* DigioOneFingerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C84DCC2A79A15600DA0C57 /* Build configuration list for PBXNativeTarget "DigioOneFingerTests" */;
+			buildPhases = (
+				5D02518D0661F7EA373B92A5 /* [CP] Check Pods Manifest.lock */,
+				93C84DB12A79A15600DA0C57 /* Sources */,
+				93C84DB22A79A15600DA0C57 /* Frameworks */,
+				93C84DB32A79A15600DA0C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93C84DB72A79A15600DA0C57 /* PBXTargetDependency */,
+			);
+			name = DigioOneFingerTests;
+			productName = DigioOneFingerTests;
+			productReference = 93C84DB52A79A15600DA0C57 /* DigioOneFingerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93C84DBE2A79A15600DA0C57 /* DigioOneFingerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C84DCF2A79A15600DA0C57 /* Build configuration list for PBXNativeTarget "DigioOneFingerUITests" */;
+			buildPhases = (
+				9DF0204E10E806CD8347004D /* [CP] Check Pods Manifest.lock */,
+				93C84DBB2A79A15600DA0C57 /* Sources */,
+				93C84DBC2A79A15600DA0C57 /* Frameworks */,
+				93C84DBD2A79A15600DA0C57 /* Resources */,
+				7C33E039CAD7823C52DFAE89 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93C84DC12A79A15600DA0C57 /* PBXTargetDependency */,
+			);
+			name = DigioOneFingerUITests;
+			productName = DigioOneFingerUITests;
+			productReference = 93C84DBF2A79A15600DA0C57 /* DigioOneFingerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93C84D972A79A15400DA0C57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					93C84D9E2A79A15400DA0C57 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					93C84DB42A79A15600DA0C57 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 93C84D9E2A79A15400DA0C57;
+					};
+					93C84DBE2A79A15600DA0C57 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 93C84D9E2A79A15400DA0C57;
+					};
+				};
+			};
+			buildConfigurationList = 93C84D9A2A79A15400DA0C57 /* Build configuration list for PBXProject "DigioOneFinger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93C84D962A79A15400DA0C57;
+			productRefGroup = 93C84DA02A79A15400DA0C57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93C84D9E2A79A15400DA0C57 /* DigioOneFinger */,
+				93C84DB42A79A15600DA0C57 /* DigioOneFingerTests */,
+				93C84DBE2A79A15600DA0C57 /* DigioOneFingerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93C84D9D2A79A15400DA0C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C84E122A7E710D00DA0C57 /* Localizable.strings in Resources */,
+				93C84DE42A7A6F7500DA0C57 /* market-products.json in Resources */,
+				93C84E0F2A7DB74800DA0C57 /* CellImageView.xib in Resources */,
+				93C84DAC2A79A15600DA0C57 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C84DB32A79A15600DA0C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C84DBD2A79A15600DA0C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		149E8F025FBC8091161BB758 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigioOneFinger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D02518D0661F7EA373B92A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigioOneFingerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C33E039CAD7823C52DFAE89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioOneFinger-DigioOneFingerUITests/Pods-DigioOneFinger-DigioOneFingerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioOneFinger-DigioOneFingerUITests/Pods-DigioOneFinger-DigioOneFingerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigioOneFinger-DigioOneFingerUITests/Pods-DigioOneFinger-DigioOneFingerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF0204E10E806CD8347004D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigioOneFinger-DigioOneFingerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA55FFBA7BBF947425AB8931 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioOneFinger/Pods-DigioOneFinger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioOneFinger/Pods-DigioOneFinger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigioOneFinger/Pods-DigioOneFinger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93C84D9B2A79A15400DA0C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C84DEE2A7C537300DA0C57 /* EntityProduct.swift in Sources */,
+				93C84DFE2A7D1C7900DA0C57 /* AlamofireSessionManagerBuilder.swift in Sources */,
+				93C84DEC2A7AD0B500DA0C57 /* EntityMarketProducts.swift in Sources */,
+				93C84E142A7E74BA00DA0C57 /* ItemDetailView.swift in Sources */,
+				93C84DA72A79A15400DA0C57 /* ViewController.swift in Sources */,
+				93C84DA32A79A15400DA0C57 /* AppDelegate.swift in Sources */,
+				93C84DEA2A7A743400DA0C57 /* CommonModel.swift in Sources */,
+				93C84DD82A79A32D00DA0C57 /* HomeView.swift in Sources */,
+				93C84DF22A7C53BE00DA0C57 /* EntityCash.swift in Sources */,
+				93C84DDF2A7A6EA300DA0C57 /* ApiServiceMarketProducts.swift in Sources */,
+				93C84DE62A7A711100DA0C57 /* ErrorResponse.swift in Sources */,
+				93C84E062A7D342400DA0C57 /* EncryptModel.swift in Sources */,
+				93C84E082A7D7AEE00DA0C57 /* ViewCodeProtocol.swift in Sources */,
+				93C84DE82A7A73B900DA0C57 /* CommonCustomTypes.swift in Sources */,
+				93C84DD62A79A30600DA0C57 /* HomeViewModel.swift in Sources */,
+				93C84E022A7D230800DA0C57 /* LayoutTools.swift in Sources */,
+				93C84E042A7D2C1700DA0C57 /* CustomRepository.swift in Sources */,
+				93C84DF72A7D0C2E00DA0C57 /* CommonDevice.swift in Sources */,
+				93C84DDA2A79A33800DA0C57 /* HomeViewController.swift in Sources */,
+				93C84DE12A7A6EB400DA0C57 /* RepositoryMarketProducts.swift in Sources */,
+				93C84E1A2A811CEE00DA0C57 /* Coordinator.swift in Sources */,
+				93C84DF02A7C537D00DA0C57 /* EntitySpotlight.swift in Sources */,
+				93C84DFB2A7D108F00DA0C57 /* ConsoleLog.swift in Sources */,
+				93C84E002A7D1DA500DA0C57 /* TrustKitCertificatePinning.swift in Sources */,
+				93C84E162A7ED6E100DA0C57 /* ItemDetailController.swift in Sources */,
+				93C84E1C2A81245200DA0C57 /* ItemModel.swift in Sources */,
+				93C84DDD2A79A36A00DA0C57 /* CollectionImageView.swift in Sources */,
+				93C84E0D2A7DB67300DA0C57 /* CellImageView.swift in Sources */,
+				93C84DF92A7D0CD300DA0C57 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C84DB12A79A15600DA0C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C84DBA2A79A15600DA0C57 /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C84DBB2A79A15600DA0C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93C84DB72A79A15600DA0C57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C84D9E2A79A15400DA0C57 /* DigioOneFinger */;
+			targetProxy = 93C84DB62A79A15600DA0C57 /* PBXContainerItemProxy */;
+		};
+		93C84DC12A79A15600DA0C57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C84D9E2A79A15400DA0C57 /* DigioOneFinger */;
+			targetProxy = 93C84DC02A79A15600DA0C57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		93C84DC72A79A15600DA0C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93C84DC82A79A15600DA0C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93C84DCA2A79A15600DA0C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2545F07D155E34CA5213DD67 /* Pods-DigioOneFinger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3CQ93J3WS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigioOneFinger/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFinger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93C84DCB2A79A15600DA0C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F887B9FCF549B8A819231B /* Pods-DigioOneFinger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3CQ93J3WS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigioOneFinger/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFinger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93C84DCD2A79A15600DA0C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676B3B82EA672F88E8292504 /* Pods-DigioOneFingerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3CQ93J3WS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFingerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigioOneFinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigioOneFinger";
+			};
+			name = Debug;
+		};
+		93C84DCE2A79A15600DA0C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7746C5D0986F6669306BE3A6 /* Pods-DigioOneFingerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3CQ93J3WS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFingerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigioOneFinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigioOneFinger";
+			};
+			name = Release;
+		};
+		93C84DD02A79A15600DA0C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F904B8588E6CF7DB9D2FD959 /* Pods-DigioOneFinger-DigioOneFingerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3CQ93J3WS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFingerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigioOneFinger;
+			};
+			name = Debug;
+		};
+		93C84DD12A79A15600DA0C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0352151CA731510CEC8E1577 /* Pods-DigioOneFinger-DigioOneFingerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M3CQ93J3WS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFingerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigioOneFinger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93C84D9A2A79A15400DA0C57 /* Build configuration list for PBXProject "DigioOneFinger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C84DC72A79A15600DA0C57 /* Debug */,
+				93C84DC82A79A15600DA0C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C84DC92A79A15600DA0C57 /* Build configuration list for PBXNativeTarget "DigioOneFinger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C84DCA2A79A15600DA0C57 /* Debug */,
+				93C84DCB2A79A15600DA0C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C84DCC2A79A15600DA0C57 /* Build configuration list for PBXNativeTarget "DigioOneFingerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C84DCD2A79A15600DA0C57 /* Debug */,
+				93C84DCE2A79A15600DA0C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C84DCF2A79A15600DA0C57 /* Build configuration list for PBXNativeTarget "DigioOneFingerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C84DD02A79A15600DA0C57 /* Debug */,
+				93C84DD12A79A15600DA0C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93C84D972A79A15400DA0C57 /* Project object */;
+}

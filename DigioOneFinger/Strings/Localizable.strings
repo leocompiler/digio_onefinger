@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  DigioOneFinger
+
+  Created by LEONARDO A SILVEIRA on 05/08/23.
+  
+*/
+
+
+"unknown_error" = "Erro desconhecido";
+"session_error" = "Expired session";
+"empty_error_title" = "Ops";
+"empty_error_description" = "Erro interno.";
+
+"home_title" = "Olá, Maria";
+
+"home_detail_item_title"= "Uber";
+"home_detail_item_description"= "Dê um vale presente Uber para amigos e familiares, ou use os vales para adicionar créditos à sua conta. O app Uber conecta você a uma viagem confiável em apenas alguns minutos. Você pode escolher entre as opções econômicas ou Premium para viajar do seu jeito. O pagamento é fácil e sem complicações!";
+ 
+"error_response_empty"= "response by service is empty";
