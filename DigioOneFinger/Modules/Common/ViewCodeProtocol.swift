@@ -48,16 +48,24 @@ extension ViewCodeProtocol where Self: UIViewController {
 class CommonViewController: UIViewController {
     
     private var loadingView: DotsAnimationView?
-    
+   
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-            // Trait collection has already changed
+        super.traitCollectionDidChange(previousTraitCollection)
         ConsoleLog.normal(message: "traitCollectionDidChange")
+        if #available(iOS 13.0, *) {
+            if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                if traitCollection.userInterfaceStyle == .dark {
+                    //Dark
+                }
+                else {
+                    //Light
+                }
+            }
+        } else {
+            // Fallback on earlier versions
+        }
     }
-
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        // Trait collection will change. Use this one so you know what the state is changing to.
-        ConsoleLog.normal(message: "willTransition")
-    }
+     
     
     func setLoader(shouldBlock: Bool = true, show: Bool, to view: UIView?) {
            if show {
