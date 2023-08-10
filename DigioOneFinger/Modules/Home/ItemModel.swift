@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct ItemModel {
     var title: String?
     var urlImage: String?

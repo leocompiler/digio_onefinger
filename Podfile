@@ -14,7 +14,7 @@ target 'DigioOneFinger' do
   pod 'TrustKit', '1.7.0'
   pod 'SDWebImage', '~> 4.0'
   pod 'SnapKit', '5.6.0'
-
+  pod 'SwiftLint'
   # Pods for DigioOneFinger
 
   target 'DigioOneFingerTests' do

@@ -8,11 +8,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
-
- 
-
 protocol HomeViewModelContract {
-    
     var list: PublishSubject<EntityMarketProducts> { get }
     var error: PublishSubject<ErrorResponse> { get }
     var loading: BehaviorSubject<Bool> { get }
@@ -21,7 +17,6 @@ protocol HomeViewModelContract {
 
 }
 class HomeViewModel: HomeViewModelContract {
-    
     var list = PublishSubject<EntityMarketProducts>()
     var error = PublishSubject<ErrorResponse>()
     var loading = BehaviorSubject<Bool>(value: false)
@@ -31,8 +26,7 @@ class HomeViewModel: HomeViewModelContract {
     required init(repository: AnyRepositoryMarketProducts = RepositoryMarketProducts(mocked: false)) {
         self.repository = repository
     }
-    
-    func fetchData(){
+    func fetchData() {
         self.loading.onNext(true)
         self.repository.list { itens in
             self.list.onNext( itens )
@@ -42,7 +36,5 @@ class HomeViewModel: HomeViewModelContract {
             self.error.onNext(error)
             self.loading.onNext(false)
         }.disposed(by: bag)
-         
     }
 }
-

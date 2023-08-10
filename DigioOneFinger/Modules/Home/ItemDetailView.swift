@@ -9,16 +9,12 @@ import Foundation
 import UIKit
 import SnapKit
 
- 
-class ItemDetailView: LayoutTools  {
- 
- 
+class ItemDetailView: LayoutTools {
         private lazy var contentView: UIView = {
             let view = UIView()
             view.backgroundColor = .white
             return view
         }()
-    
         lazy var scrollView: UIScrollView = {
             let scrollView = UIScrollView()
             scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -27,35 +23,23 @@ class ItemDetailView: LayoutTools  {
             scrollView.bounces = false
             return scrollView
         }()
- 
-        lazy var itemImage : UIImageView = {
+        lazy var itemImage: UIImageView = {
             let img = UIImageView()
             img.image = UIImage( named: "")
-            img.contentMode = .scaleToFill //.scaleAspectFill //
-            img.clipsToBounds = true;
-            img.layer.cornerRadius = 8;
+            img.contentMode = .scaleToFill
+            img.clipsToBounds = true
+            img.layer.cornerRadius = 8
             img.backgroundColor = .red
             return img
         }()
-        
-
         lazy var itemTitle: UILabel = makeLabel( title: "home_detail_item_title".localized,
                                                   font: UIFont(name: boldDMSans, size: 24),
                                                   color: UIColor.black)
-        
-
-        
-        
         lazy var itemDescription: UILabel = makeLabel(title: "home_detail_item_description".localized,
                                                           font: UIFont(name: boldDMSans, size: 18),
                                                           color: UIColor.black)
-        
-     
-         
-          
-        
         private lazy var bodyViewStack: UIStackView = {
-            let views: [UIView] = [itemImage,itemTitle,itemDescription]
+            let views: [UIView] = [itemImage, itemTitle, itemDescription]
             let stack = UIStackView( arrangedSubviews: views)
             stack.axis = .vertical
             stack.spacing = 10
@@ -63,8 +47,9 @@ class ItemDetailView: LayoutTools  {
             stack.alignment = .center
             return stack
         }()
-        
-       private func makeLabel(title: String, font: UIFont? = UIFont.boldSystemFont(ofSize: 15), color: UIColor ) -> UILabel {
+       private func makeLabel(title: String,
+                              font: UIFont? = UIFont.boldSystemFont(ofSize: 15),
+                              color: UIColor ) -> UILabel {
             let textConfig = UILabel(frame: .zero)
             textConfig.font = font
             textConfig.text = title
@@ -74,21 +59,15 @@ class ItemDetailView: LayoutTools  {
             textConfig.numberOfLines = 0
             textConfig.lineBreakMode = .byWordWrapping
             textConfig.adjustsFontSizeToFitWidth = false
-            
-            
             return textConfig
         }
-       
- 
-        init() {
+       init() {
             super.init(frame: .zero)
             self.setupView()
-                          
         }
         required init?(coder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
- 
 }
 
 extension ItemDetailView: CodeView {
@@ -97,17 +76,17 @@ extension ItemDetailView: CodeView {
         self.scrollView.updateContentView()
     }
     func setupConstraints() {
-        contentView.snp.makeConstraints{ make in
+        contentView.snp.makeConstraints { make in
             make.leading.trailing.bottom.equalToSuperview()
             make.top.equalToSuperview().offset(10)
         }
-        itemTitle.snp.makeConstraints{ make in
+        itemTitle.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
         }
-        bodyViewStack.snp.makeConstraints{ make in
+        bodyViewStack.snp.makeConstraints { make in
             make.leading.trailing.equalTo(contentView).inset(10)
         }
-        scrollView.snp.makeConstraints{ make in
+        scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
 
@@ -116,16 +95,5 @@ extension ItemDetailView: CodeView {
         addSubview( contentView )
         contentView.addSubview(scrollView)
         scrollView.addSubview( bodyViewStack )
-        
-        
-        
-
     }
 }
-
-
- 
-
-
- 
-

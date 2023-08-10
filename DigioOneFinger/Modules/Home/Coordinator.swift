@@ -9,23 +9,18 @@ import Foundation
 import UIKit
 
 enum CoordinatorSteps: Int {
- 
     case home = 0
     case itemDetail = 1
-
 }
 
 class Coordinator {
-    
     private let nextStep: CoordinatorSteps?
-       
-       init(nextStep: CoordinatorSteps? = nil) {
-           self.nextStep = nextStep
-       }
+    init(nextStep: CoordinatorSteps? = nil) {
+        self.nextStep = nextStep
+    }
     func starts(    on nav: UINavigationController?,
                     animated: Bool = false,
                     item: ItemModel? = nil) {
-        
         switch nextStep {
         case .home:
             nav?.pushViewController(HomeViewController(), animated: animated)
@@ -34,16 +29,13 @@ class Coordinator {
         default: break
         }
     }
-
     func getViewController() -> UIViewController {
-
         switch nextStep {
-            case .home:
-                return HomeViewController()
-            case .itemDetail:
-                return ItemDetailController()
-            default: return HomeViewController()
+        case .home:
+            return HomeViewController()
+        case .itemDetail:
+            return ItemDetailController()
+        default: return HomeViewController()
         }
-
     }
 }

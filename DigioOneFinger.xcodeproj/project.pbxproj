@@ -326,6 +326,7 @@
 				93C84D9C2A79A15400DA0C57 /* Frameworks */,
 				93C84D9D2A79A15400DA0C57 /* Resources */,
 				AA55FFBA7BBF947425AB8931 /* [CP] Embed Pods Frameworks */,
+				939701CD2A8564920081F829 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -507,6 +508,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigioOneFinger-DigioOneFingerUITests/Pods-DigioOneFinger-DigioOneFingerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		939701CD2A8564920081F829 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		9DF0204E10E806CD8347004D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -758,7 +776,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -788,7 +806,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = leocompiler.DigioOneFinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
