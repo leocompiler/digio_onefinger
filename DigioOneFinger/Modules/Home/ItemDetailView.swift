@@ -31,7 +31,7 @@ class ItemDetailView: LayoutTools  {
         lazy var itemImage : UIImageView = {
             let img = UIImageView()
             img.image = UIImage( named: "")
-            img.contentMode =  .scaleToFill //.scaleAspectFill
+            img.contentMode = .scaleToFill //.scaleAspectFill //
             img.clipsToBounds = true;
             img.layer.cornerRadius = 8;
             img.backgroundColor = .red
@@ -98,9 +98,11 @@ extension ItemDetailView: CodeView {
     }
     func setupConstraints() {
         contentView.snp.makeConstraints{ make in
+            make.leading.trailing.bottom.equalToSuperview()
+            make.top.equalToSuperview().offset(10)
+        }
+        itemTitle.snp.makeConstraints{ make in
             make.leading.trailing.equalToSuperview()
-            make.top.equalToSuperview().inset(-20)
-            make.bottom.equalToSuperview()
         }
         bodyViewStack.snp.makeConstraints{ make in
             make.leading.trailing.equalTo(contentView).inset(10)

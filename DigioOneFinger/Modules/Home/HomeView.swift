@@ -163,7 +163,7 @@ extension HomeView: CodeView {
         }
         bodyViewStack.snp.makeConstraints{ make in
             make.leading.trailing.equalTo(contentView.safeAreaLayoutGuide).inset(10)
-            make.top.equalToSuperview().inset(10)
+            make.top.equalTo(contentView.safeAreaLayoutGuide)
         }
         stackViewTitle.snp.makeConstraints{ make in
             make.leading.trailing.equalTo(bodyViewStack)
@@ -199,10 +199,7 @@ extension HomeView: CodeView {
             
         addSubview( contentView )
         contentView.addSubview( bodyViewStack )
-         
-         
-         
- 
+          
     }
 }
 

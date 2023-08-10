@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52AD28B7DE89A025CF976FBF /* Pods_DigioOneFinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30046507AFB771A2461AACF /* Pods_DigioOneFinger.framework */; };
+		939701CC2A8466D80081F829 /* DotsAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939701CB2A8466D80081F829 /* DotsAnimationView.swift */; };
 		93C84DA32A79A15400DA0C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DA22A79A15400DA0C57 /* AppDelegate.swift */; };
 		93C84DAC2A79A15600DA0C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C84DAB2A79A15600DA0C57 /* Assets.xcassets */; };
 		93C84DBA2A79A15600DA0C57 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84DB92A79A15600DA0C57 /* HomeViewModelTests.swift */; };
@@ -69,6 +70,7 @@
 		2545F07D155E34CA5213DD67 /* Pods-DigioOneFinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFinger.debug.xcconfig"; path = "Target Support Files/Pods-DigioOneFinger/Pods-DigioOneFinger.debug.xcconfig"; sourceTree = "<group>"; };
 		676B3B82EA672F88E8292504 /* Pods-DigioOneFingerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFingerTests.debug.xcconfig"; path = "Target Support Files/Pods-DigioOneFingerTests/Pods-DigioOneFingerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7746C5D0986F6669306BE3A6 /* Pods-DigioOneFingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioOneFingerTests.release.xcconfig"; path = "Target Support Files/Pods-DigioOneFingerTests/Pods-DigioOneFingerTests.release.xcconfig"; sourceTree = "<group>"; };
+		939701CB2A8466D80081F829 /* DotsAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsAnimationView.swift; sourceTree = "<group>"; };
 		93C84D9F2A79A15400DA0C57 /* DigioOneFinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioOneFinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C84DA22A79A15400DA0C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C84DAB2A79A15600DA0C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				93C84E012A7D230800DA0C57 /* LayoutTools.swift */,
 				93C84E0C2A7DB67300DA0C57 /* CellImageView.swift */,
 				93C84E0E2A7DB74800DA0C57 /* CellImageView.xib */,
+				939701CB2A8466D80081F829 /* DotsAnimationView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				93C84E002A7D1DA500DA0C57 /* TrustKitCertificatePinning.swift in Sources */,
 				93C84E162A7ED6E100DA0C57 /* ItemDetailController.swift in Sources */,
 				93C84E1C2A81245200DA0C57 /* ItemModel.swift in Sources */,
+				939701CC2A8466D80081F829 /* DotsAnimationView.swift in Sources */,
 				93C84DDD2A79A36A00DA0C57 /* CollectionImageView.swift in Sources */,
 				93C84E0D2A7DB67300DA0C57 /* CellImageView.swift in Sources */,
 				93C84DF92A7D0CD300DA0C57 /* Constants.swift in Sources */,

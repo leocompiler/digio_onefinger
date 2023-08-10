@@ -11,13 +11,15 @@ import RxSwift
 import RxCocoa
 
 
-class HomeViewController: UIViewController, ViewCodeProtocol {
+class HomeViewController: CommonViewController, ViewCodeProtocol {
     
     fileprivate let bag = DisposeBag()
     typealias CustomView = HomeView
     fileprivate var itens: EntityMarketProducts?
     var viewModel: HomeViewModel? {
             didSet {
+                    viewModel?.loading
+                    .subscribe( onNext: self.handlerLoading)
                     viewModel?.error
                         .subscribe(onNext: self.handlerError )
                         .disposed(by: bag)
@@ -69,6 +71,9 @@ class HomeViewController: UIViewController, ViewCodeProtocol {
         self.customView.layoutIfNeeded()
                                 
    }
+    fileprivate func handlerLoading(_ loading: Bool){
+        self.setLoader(show: loading)
+    }
                                        
 }
 

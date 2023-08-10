@@ -3,6 +3,26 @@
     {
       "filename" : "Screenshot 2023-08-05 at 16.46.20.png",
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "filename" : "Screenshot 2023-08-05 at 16.46.20 1.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "icon_user_title.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

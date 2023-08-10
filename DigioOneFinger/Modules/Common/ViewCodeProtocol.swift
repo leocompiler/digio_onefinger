@@ -11,6 +11,7 @@ import UIKit
 public protocol ViewCodeProtocol {  associatedtype CustomView: UIView }
 
 extension ViewCodeProtocol where Self: UIViewController {
+ 
 
     public var customView: CustomView {
         guard let customView = view as? CustomView else {
@@ -41,5 +42,91 @@ extension ViewCodeProtocol where Self: UIViewController {
         }))
         view.present(alert, animated: true, completion: nil)
     }
+    
 }
 
+class CommonViewController: UIViewController {
+    
+    private var loadingView: DotsAnimationView?
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+            // Trait collection has already changed
+        ConsoleLog.normal(message: "traitCollectionDidChange")
+    }
+
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        // Trait collection will change. Use this one so you know what the state is changing to.
+        ConsoleLog.normal(message: "willTransition")
+    }
+    
+    func setLoader(shouldBlock: Bool = true, show: Bool, to view: UIView?) {
+           if show {
+               showLoader(shouldBlock: shouldBlock,to: view)
+           } else {
+               hideLoader(to: view)
+           }
+       }
+       
+       func setLoader(show: Bool) {
+           setLoader(shouldBlock: true,show: show, to: nil)
+       }
+       
+       func showLoader() {
+           showLoader(shouldBlock: true ,to: nil)
+       }
+       
+       func hideLoader () {
+           hideLoader(to: nil)
+       }
+       
+       func showLoader(shouldBlock: Bool = true,to container: UIView?) {
+       
+            
+           view.endEditing(true)
+           
+           let bounds = shouldBlock ? UIScreen.main.bounds : view.bounds
+           let frame = container?.frame ?? CGRect(
+               x: 0,
+               y: 0,
+               width: bounds.size.width,
+               height: bounds.size.height
+           )
+           if loadingView != nil {
+               loadingView?.removeFromSuperview()
+           }
+           let x = UIScreen.main.bounds.size.width*0.5
+           let y = UIScreen.main.bounds.size.height*0.5
+           let frameSize: CGRect = CGRect(x: x,y: y,width: 10,height: 10)
+           loadingView = DotsAnimationView(frame: frameSize, dotSize: .init(width: 10, height: 10), dotColor: .black)
+           view.alpha = 0.5
+           if shouldBlock && navigationController != nil {
+               navigationController?.view.addSubview(loadingView!)
+               navigationController?.view.isUserInteractionEnabled = false
+           } else {
+               view.addSubview(loadingView!)
+               view.isUserInteractionEnabled = false
+           }
+           if let subView = container {
+               loadingView?.snp.makeConstraints({ make in
+                   make.edges.equalTo(subView.snp.edges)
+               })
+           }
+           
+       }
+       
+       func hideLoader (to container: UIView?) {
+         
+           guard let _ = loadingView else { return }
+           self.onCloseLoader()
+           
+       }
+       
+       private func onCloseLoader() {
+           
+           loadingView?.removeFromSuperview()
+           loadingView = nil
+           view.isUserInteractionEnabled = true
+           view.alpha = 1
+       }
+    
+}

@@ -39,6 +39,7 @@ class CollectionImageView: UICollectionView {
         self.delegate = delegate
         self.dataSource = self
         self.alwaysBounceHorizontal = true
+        self.showsHorizontalScrollIndicator = false
          
         self.reloadData()
         
