@@ -1,15 +1,16 @@
 # digio_onefinger
 Um exemplo de aplicativo para processo da Digio
 <div>
- <img width="200" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/bad6f6fa-d4e3-4409-90b0-71ecf6e7924e">
- <img width="200" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/04c45446-f355-49ea-a679-fb1d08407188">
- <img width="200" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/12541ced-1043-4970-97d9-debf3f7f3f2b">
+ <img width="150" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/bad6f6fa-d4e3-4409-90b0-71ecf6e7924e">
+ <img width="150" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/04c45446-f355-49ea-a679-fb1d08407188">
+ <img width="150" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/12541ced-1043-4970-97d9-debf3f7f3f2b">
+ 
+ <img width="150" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/2cabf6b5-9e15-4acf-8357-26b3edbcf123">
+ <img width="150" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/0c5a2a39-9cb7-4824-90f7-5062b5decc8b">
+
 </div>
 <div>
- <img width="302" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/2cabf6b5-9e15-4acf-8357-26b3edbcf123">
-</div>
-<div>
- <img width="350" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/dbaa6abe-4f52-46fd-aea7-b99e31aa991d"> 
+ <img width="200" alt="image" src="https://github.com/leocompiler/digio_onefinger/assets/807937/dbaa6abe-4f52-46fd-aea7-b99e31aa991d"> 
 </div>
 
 # Arquitetura
