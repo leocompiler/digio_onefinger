@@ -9,9 +9,7 @@ import Foundation
 import EVReflection
 
 class CommonModel: EVNetworkingObject {
-     
-    
-    var _skipEmptyValues:Bool { get { return true }}
+    var _skipEmptyValues: Bool { get { return true } }
     override func skipPropertyValue(_ value: Any, key: String) -> Bool {
         if _skipEmptyValues {
             if let value = value as? String, value.count == 0 || value == "null" {
@@ -43,6 +41,4 @@ class CommonModel: EVNetworkingObject {
             return nil
         }
     }
-  
 }
-

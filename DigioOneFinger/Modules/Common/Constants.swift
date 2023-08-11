@@ -13,7 +13,6 @@ var Device_Id: String = ""
 var coockies: String = ""
 let defaultLocale = "pt_BR"
 let SSL_PINS = [""]
-
 let regularAnton = "Anton-Regular"
 let boldDMSans = "DMSans-Bold"
 let boldItalicDMSans = "DMSans-BoldItalic"

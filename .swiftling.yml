@@ -4,6 +4,9 @@ disabled_rules: # rule identifiers to exclude from running
   - control_statement
   - line_length 
   - multiple_closures_with_trailing_closure  
+  - identifier_name
+  - private_over_fileprivate
+  - implicit_getter
 opt_in_rules: # some rules are only opt-in
   - empty_count
   # Find all the available rules by running:

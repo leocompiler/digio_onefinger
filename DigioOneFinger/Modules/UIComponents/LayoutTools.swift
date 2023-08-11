@@ -11,7 +11,6 @@ import Foundation
 class LayoutTools: UIView {
     var customBackgroundColor: UIColor?
     var customTextColor: UIColor?
-    
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -21,7 +20,7 @@ class LayoutTools: UIView {
         super.init(frame: frame)
         setupColor()
     }
-    private func setupColor(){
+    private func setupColor() {
         if #available(iOS 13.0, *) {
             self.customBackgroundColor = .secondarySystemBackground
             self.customTextColor = .label

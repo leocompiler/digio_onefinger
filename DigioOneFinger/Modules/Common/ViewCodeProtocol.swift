@@ -26,7 +26,6 @@ extension ViewCodeProtocol where Self: UIViewController {
 }
 
 class CommonViewController: UIViewController {
-    
     private var loadingView: DotsAnimationView?
     func setLoader(shouldBlock: Bool = true, show: Bool, to view: UIView?) {
            if show {
@@ -46,7 +45,6 @@ class CommonViewController: UIViewController {
        }
        func showLoader(shouldBlock: Bool = true, to container: UIView?) {
            view.endEditing(true)
-           let bounds = shouldBlock ? UIScreen.main.bounds : view.bounds
            if loadingView != nil {
                loadingView?.removeFromSuperview()
            }

@@ -20,7 +20,6 @@ final class TrustKitCertificatePinning {
     lazy var isEnabled: Bool = {
         self.pins != nil && self.host != nil
     }()
-    
     static func initialize() {
         if TrustKitCertificatePinning.sharedInstance == nil {
             TrustKitCertificatePinning.sharedInstance = TrustKitCertificatePinning()
@@ -28,12 +27,12 @@ final class TrustKitCertificatePinning {
         if let host = TrustKitCertificatePinning.sharedInstance?.host,
             let pins = TrustKitCertificatePinning.sharedInstance?.pins,
             let isEnabled = TrustKitCertificatePinning.sharedInstance?.isEnabled {
-            let trustKitConfig: [String : Any] = [
+            let trustKitConfig: [String: Any] = [
                 kTSKPinnedDomains: [
                     host: [
                         kTSKEnforcePinning: isEnabled,
                         kTSKIncludeSubdomains: true,
-                        kTSKPublicKeyHashes: pins,
+                        kTSKPublicKeyHashes: pins
                     ]
                 ]
             ]

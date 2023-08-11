@@ -16,16 +16,14 @@ extension String: Localizable {
     var localized: String {
         return NSLocalizedString(self, comment: "")
     }
-    
 }
 extension String {
     static func localized(withKey key: String) -> String {
-            let defaults = UserDefaults.standard
-            let language = defaults.object(forKey: KEY_USER_LANGUAGE) as? String
-            
-            let path = Bundle.main.path(forResource: language, ofType: "lproj")
-            let bundle = Bundle(path: path!)
-            return NSLocalizedString(key, tableName: nil, bundle: bundle!, value: "", comment: "")
+        let defaults = UserDefaults.standard
+        let language = defaults.object(forKey: KEY_USER_LANGUAGE) as? String
+        let path = Bundle.main.path(forResource: language, ofType: "lproj")
+        let bundle = Bundle(path: path!)
+        return NSLocalizedString(key, tableName: nil, bundle: bundle!, value: "", comment: "")
     }
     var encryptedData: Data {
         EncryptModel(encryptJson: self).toJsonData()
@@ -38,12 +36,9 @@ extension Data {
               let data = try? JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted]),
               let prettyPrintedString = String(data: data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue)) else {
             return String(data: self, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
-            
         }
-        
         return prettyPrintedString
     }
- 
     var string: String {
         get {
             String(decoding: self, as: UTF8.self)
@@ -52,9 +47,6 @@ extension Data {
 }
 
 extension Date {
-    
-    
-    
     func toString(withFormat format: String, capitalizeMonth: Bool = false) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
@@ -65,27 +57,21 @@ extension Date {
         }
         return dateFormatter.string(from: self)
     }
-    
-     
 }
 
 extension UIImageView {
-     
-    func setImage(imageURL: String?, placeholder: String = "placeholder-no-photo"){
+    func setImage(imageURL: String?, placeholder: String = "placeholder-no-photo") {
         if let imgURL = imageURL {
-            if imgURL.count <= 0 || imgURL.contains("miss"){
+            if imgURL.count <= 0 || imgURL.contains("miss") {
                 self.image = UIImage(named: placeholder)
-            }
-            else {
+            } else {
                 UIView.animate(withDuration: 0.5) {
                     self.sd_setImage(with: URL(string: imgURL), completed: nil)
                 }
             }
-        }
-        else {
+        } else {
             self.image = UIImage(named: placeholder)
         }
-        
     }
     func outerView() -> UIView {
         let outerView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
@@ -102,7 +88,6 @@ extension UIImageView {
 extension UIScrollView {
     func updateContentView() {
         let width = contentSize.width
-        contentSize = CGSize(width:width, height: UIScreen.main.bounds.height)
+        contentSize = CGSize(width: width, height: UIScreen.main.bounds.height)
     }
 }
-

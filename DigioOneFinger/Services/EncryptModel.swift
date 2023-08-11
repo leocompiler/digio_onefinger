@@ -15,5 +15,4 @@ class EncryptModel: CommonModel {
         self.data = ""//AESCrypt.encrypt(encryptJson)
     }
 
-
 }

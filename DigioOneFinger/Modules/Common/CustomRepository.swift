@@ -43,9 +43,8 @@ class CustomRepository {
     
 }
 
-extension Response  {
+extension Response {
     fileprivate func logDebug() {
-             
         let requestData: String = """
         - \(String(describing: self.request?.httpMethod ?? ""))
         - Headers: \(self.request?.allHTTPHeaderFields ?? ["":""])
@@ -53,7 +52,6 @@ extension Response  {
         - Endpoint: \(String(describing: self.request?.url?.absoluteString ?? ""))
         """
         ConsoleLog.normal(message: requestData)
-     
     }
     func parse(success: @escaping (Response)->(), error: @escaping (ErrorResponse)->()) {
         logEndpoint = self.request?.url?.absoluteString ?? ""
@@ -61,7 +59,6 @@ extension Response  {
         logDebug()
         success(self)
      }
-    
     func convertStringToDictionary() -> NSDictionary? {
         do {
             return try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? NSDictionary
@@ -70,7 +67,6 @@ extension Response  {
         }
         return nil
     }
-    
 }
 
 func loadJson(filename fileName: String) -> String {
@@ -86,7 +82,6 @@ func loadJson(filename fileName: String) -> String {
 }
 
 extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
-    
     // MARK: Single Sucess
     func singleSubscribe(onSuccess: @escaping () -> (), onError: @escaping (ErrorResponse) -> ()) -> Disposable {
         return self.subscribe(onSuccess: { (response) in
@@ -103,7 +98,6 @@ extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
             })
         })
     }
-    
     func singleSubscribeAsync(onSuccess: @escaping () -> (), onError: @escaping (ErrorResponse) -> ()) -> Disposable {
         return self.subscribe(onSuccess: { (response) in
             DispatchQueue.global(qos:  .userInitiated).async {
@@ -126,7 +120,6 @@ extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
             })
         })
     }
-    
     // MARK: Single functions
     func singleSubscribe<T: CommonModel>(onSuccess: @escaping (T) -> (), onError: @escaping (ErrorResponse) -> ()) -> Disposable {
         return self.subscribe(onSuccess: { (response) in
@@ -148,7 +141,6 @@ extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
             })
         })
     }
-    
     func singleSubscribe<T: CommonModel>(onSuccess: @escaping (T) -> (), onError: @escaping (Int, String) -> ()) -> Disposable {
         return self.subscribe(onSuccess: { (response) in
             if let response = response as? Response {
@@ -169,7 +161,6 @@ extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
             })
         })
     }
-    
     func singleSubscribeAsync<T: CommonModel>(onSuccess: @escaping (T) -> (), onError: @escaping (ErrorResponse) -> ()) -> Disposable {
         return self.subscribe(onSuccess: { (response) in
             DispatchQueue.global(qos:  .userInteractive).async {
@@ -196,10 +187,6 @@ extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
             }
         })
     }
-    
-     
-     
-    
     // MARK: Private methods aux json convert
     func convertStringToDictionary(data: Data) -> NSDictionary? {
         guard let jsonString = String(data: data, encoding: .utf8) else {
@@ -213,7 +200,6 @@ extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
         }
         return nil
     }
-    
     func convertStringToArrayDictionary(data: Data) -> [NSDictionary]? {
         guard let jsonString = String(data: data, encoding: .utf8) else {
             return []
@@ -225,7 +211,5 @@ extension PrimitiveSequenceType where Self.TraitType == RxSwift.SingleTrait {
             ConsoleLog.normal(message: "(convertStringToArrayDictionary) Estrutura do payload inválido (precisa ser JSON)")
         }
         return nil
-    }
-     
-    
+    }    
 }
