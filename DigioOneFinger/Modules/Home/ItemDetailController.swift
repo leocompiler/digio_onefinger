@@ -37,4 +37,14 @@ class ItemDetailController: UIViewController, ViewCodeProtocol {
         self.customView.itemDescription.text =  self.item.description
         self.customView.layoutIfNeeded()
    }
+    
+    override var traitCollection: UITraitCollection {
+        ConsoleLog.normal(message: UIScreen.main.traitCollection.userInterfaceStyle.rawValue)
+        if UIScreen.main.traitCollection.userInterfaceStyle == .dark {
+            return UITraitCollection(traitsFrom: [super.traitCollection, UITraitCollection(userInterfaceStyle: .dark)])
+        } else {
+            return UITraitCollection(traitsFrom: [super.traitCollection, UITraitCollection(userInterfaceStyle: .light)])
+        }
+      
+    }
 }

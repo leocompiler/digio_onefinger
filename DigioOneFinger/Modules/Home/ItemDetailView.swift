@@ -12,7 +12,7 @@ import SnapKit
 class ItemDetailView: LayoutTools {
         private lazy var contentView: UIView = {
             let view = UIView()
-            view.backgroundColor = .white
+            view.backgroundColor = customBackgroundColor
             return view
         }()
         lazy var scrollView: UIScrollView = {
@@ -32,12 +32,12 @@ class ItemDetailView: LayoutTools {
             img.backgroundColor = .red
             return img
         }()
-        lazy var itemTitle: UILabel = makeLabel( title: "home_detail_item_title".localized,
+        lazy var itemTitle: UILabel = makeLabel(  title: "home_detail_item_title".localized,
                                                   font: UIFont(name: boldDMSans, size: 24),
-                                                  color: UIColor.black)
-        lazy var itemDescription: UILabel = makeLabel(title: "home_detail_item_description".localized,
-                                                          font: UIFont(name: boldDMSans, size: 18),
-                                                          color: UIColor.black)
+                                                  color: customTextColor!)
+        lazy var itemDescription: UILabel = makeLabel(  title: "home_detail_item_description".localized,
+                                                        font: UIFont(name: boldDMSans, size: 18),
+                                                        color: customTextColor!)
         private lazy var bodyViewStack: UIStackView = {
             let views: [UIView] = [itemImage, itemTitle, itemDescription]
             let stack = UIStackView( arrangedSubviews: views)
@@ -78,7 +78,7 @@ extension ItemDetailView: CodeView {
     func setupConstraints() {
         contentView.snp.makeConstraints { make in
             make.leading.trailing.bottom.equalToSuperview()
-            make.top.equalToSuperview().offset(10)
+            make.top.equalToSuperview()
         }
         itemTitle.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()

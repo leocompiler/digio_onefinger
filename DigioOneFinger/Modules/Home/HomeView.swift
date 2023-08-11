@@ -15,12 +15,11 @@ enum TypeCollection: Int {
 protocol HomeViewDelegate: AnyObject {
     func onTapButton(_ index: Int, type: TypeCollection )
 }
-
 class HomeView: LayoutTools {
         let delegate: HomeViewDelegate
         private lazy var contentView: UIView = {
             let view = UIView()
-            view.backgroundColor = .white
+            view.backgroundColor = customBackgroundColor
             return view
         }()
         lazy var iconTitle: UIImageView = {
@@ -32,7 +31,7 @@ class HomeView: LayoutTools {
         }()
         lazy var labelTitle: UILabel = makeLabel( title: "home_title".localized,
                                               font: UIFont(name: regularDMSans, size: 24),
-                                              color: UIColor.black)
+                                              color: customTextColor!)
 
         lazy var stackViewTitle: UIStackView = {
             let views: [UIView] = [iconTitle, labelTitle]
@@ -54,7 +53,7 @@ class HomeView: LayoutTools {
                                                     height: 100)
     lazy var titleBannerCash: UILabel = makeLabel( title: "Digio Cash".localized,
                                                    font: UIFont(name: boldDMSans, size: 18),
-                                                   color: UIColor.black)
+                                                   color: customTextColor!)
 
         lazy var imageBannerCash: UIImageView = {
             let img = UIImageView()
@@ -82,7 +81,7 @@ class HomeView: LayoutTools {
         }( )
         lazy var productTitle: UILabel = makeLabel( title: "Produtos".localized,
                                               font: UIFont(name: boldDMSans, size: 18),
-                                              color: UIColor.black)
+                                              color: customTextColor!)
         lazy var productView = CollectionImageView(listItens: [],
                                                    identfier: "product",
                                                    delegate: self,

@@ -13,9 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var orientationLock = UIInterfaceOrientationMask.portrait
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
         self.window = UIWindow(frame: UIScreen.main.bounds)
-
         let coordinator = Coordinator(nextStep: CoordinatorSteps.home)
         let mainViewController = coordinator.getViewController()
         let navigationController = UINavigationController(rootViewController: mainViewController)
@@ -28,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.navigationBar.shadowImage = UIImage()
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.transform = CGAffineTransform(translationX: 0, y: 0)
-
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         return true
@@ -37,4 +34,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
             return self.orientationLock
     }
-}
+ }
