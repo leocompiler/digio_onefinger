@@ -35,5 +35,6 @@ Um exemplo de aplicativo para processo da Digio
   pod 'TrustKit', '1.7.0'  ( o TrustKit deixe para os proximos repositorys que precisa de ssl para encriptar e descriptar o body da request http/https)
   pod 'SDWebImage', '~> 4.0' ( facilitador para carregar uma imagem apartir de uma url ) 
   pod 'SnapKit', '5.6.0' ( facilitador para autoContraints via ViewCode UlKit)
+  pod 'SwiftLint' (helper para  analisar o código-fonte para sinalizar erros de programação, erros de estilo e construções suspeitas.)
 
 ```
